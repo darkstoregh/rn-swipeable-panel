@@ -270,7 +270,7 @@ class SwipeablePanel extends Component<SwipeablePanelProps, SwipeablePanelState>
                 <React.Fragment>{this.props.children}</React.Fragment>
               </TouchableHighlight>
             ) : (
-              this.props.children
+              <React.Fragment>{this.props.children}</React.Fragment>
             )}
           </ScrollView>
         </Animated.View>
